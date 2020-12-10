@@ -4,25 +4,25 @@ public class Estudiante {
 	private int Id;
 	private String Nombre;
 	private String Apellido;
-	private int Cedula;
+	private int Edad;
 
-	public Estudiante(){
-		
+	public Estudiante() {
+
 	}
 
-	public Estudiante(String nombre, String apellido, int cedula) {
+	public Estudiante(String nombre, String apellido, int edad) {
 		super();
 		Nombre = nombre;
 		Apellido = apellido;
-		Cedula = cedula;
+		Edad = edad;
 	}
 
-	public Estudiante(int id, String nombre, String apellido, int cedula) {
+	public Estudiante(int id, String nombre, String apellido, int edad) {
 		super();
 		Id = id;
 		Nombre = nombre;
 		Apellido = apellido;
-		Cedula = cedula;
+		Edad = edad;
 	}
 
 	public int getId() {
@@ -49,18 +49,17 @@ public class Estudiante {
 		Apellido = apellido;
 	}
 
-	public int getCedula() {
-		return Cedula;
+	public int getEdad() {
+		return Edad;
 	}
 
-	public void setCedula(int cedula) {
-		Cedula = cedula;
+	public void setEdad(int edad) {
+		Edad = edad;
 	}
 
 	@Override
 	public String toString() {
-		return "Estudiante [Id=" + Id + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Cedula=" + Cedula + "]";
+		return "Estudiante [Id=" + Id + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Edad=" + Edad + "]";
 	}
-	
 
 }
